@@ -1,0 +1,18 @@
+{
+    animals {
+        ... on Cat {
+            name
+            size {
+                height
+                weight
+            }
+        }
+        ... on Mouse {
+            name
+            size {
+                height
+                weight
+            }
+        }
+    }
+}

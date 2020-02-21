@@ -1,0 +1,21 @@
+type Size {
+    height: Int!
+    weight: Int!
+}
+
+type Cat {
+    name: String!
+    size: Size!
+}
+
+type Mouse {
+    name: String!
+    # TODO: To make test work, change `Size` to `Size!` below
+    size: Size
+}
+
+union Animal = Cat | Mouse
+
+type Query {
+    animals: [Animal!]!
+}
